@@ -1,0 +1,222 @@
+:root {
+  --dark-bg: rgba(15, 15, 15, 0.95);
+  /* --dark-bg: rgba(236, 116, 116, 0.95); */
+  --spacing: 200px;
+  --active-color: bisque;
+
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+main {
+  width: 100vw;
+  color: white;
+  z-index: 99;
+  position: absolute;
+  width: 100%;
+  margin: 0px auto;
+  padding: 120px 0px;
+  
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+h1, h2, h3, blockquote {
+  font-family: elevon, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+
+  header {
+    background: var(--dark-bg);
+    grid-column: 2 / span 5;
+    font-size: 2.5rem;
+    padding: 2rem;
+    margin-bottom: var(--spacing);
+    border-radius: 10px;
+  }
+
+  section {
+    grid-column: 2 / 8;
+    padding: 1rem;
+    background: var(--dark-bg);
+    font-size: 1.25rem;
+    line-height: 1;
+    margin-bottom: var(--spacing);
+    border-radius: 10px;
+  }
+
+  blockquote {
+    margin: 0;
+    grid-column: 2 / span 9;
+    margin-bottom: var(--spacing);
+    padding: 0;
+  }
+
+  blockquote p {
+    color: black;
+    background-color: white;
+    font-size: 4rem;
+    display: inline;
+    line-height: 1.5;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .left {
+    grid-column: 6 / 12;
+  }
+.row {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;      
+}
+.row:after {
+  display: table;
+  clear: both;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row .column p {
+  line-height: 1.25;
+}
+
+.row .column p a {
+  text-decoration: none;
+  color: var(--active-color);
+}
+
+.detail {
+  border: 1px solid;
+  border-radius: 10px;
+  background: gray;
+}
+  /* .detail span {
+    color: var(--active-color);
+  } */
+
+span.c-active {
+  color: var(--active-color);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: transparent;
+}
+
+li p {
+  display: block;
+  padding: 0 10px;
+}
+
+.prj:hover {
+  animation: prj-animation forwards 0.5s linear;
+  cursor: pointer;
+}
+
+.prj:active {
+  font-size: 20pt;
+  color: var(--active-color);
+}
+
+.active {
+  font-size: 20pt;
+  color: var(--active-color);
+}
+
+@keyframes prj-animation {
+  to {
+    font-size: 20pt;
+  }
+}
+
+.topToBottom {
+  animation: topToBottom ease 2s;
+  -webkit-animation: topToBottom ease 2s;
+  -moz-animation: topToBottom ease 2s;
+  -o-animation: topToBottom ease 2s;
+  -ms-animation: topToBottom ease 2s;
+  z-index: -1;
+}
+@keyframes topToBottom {
+  from {
+    margin-top: -23%;
+    color: transparent;
+  }
+  to {
+    margin-top: 0%;
+    color: var(--active-color);
+  }
+}
+
+@-moz-keyframes topToBottom {
+  from {
+    margin-top: -23%;
+    color: transparent;
+  }
+  to {
+    margin-top: 0%;
+    color: var(--active-color);
+  }
+}
+
+@-webkit-keyframes topToBottom {
+  from {
+    margin-top: -23%;
+    color: transparent;
+  }
+  to {
+    margin-top: 0%;
+    color: var(--active-color);
+  }
+}
+
+@-o-keyframes topToBottom {
+  from {
+    margin-top: -23%;
+    color: transparent;
+  }
+  to {
+    margin-top: 0%;
+    color: var(--active-color);
+  }
+}
+
+@-ms-keyframes topToBottom {
+  from {
+    margin-top: -23%;
+    color: transparent;
+  }
+  to {
+    margin-top: 0%;
+    color: var(--active-color);
+  }
+}

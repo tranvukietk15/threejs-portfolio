@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <script type="text/javascript" src="/prj.js"></script> -->
+
+  <title>Janos</title>
+</head>
+
+<body>
+  <canvas id="bg"></canvas>
+
+  <main>
+
+    <header>
+      <h1>Janos Tran</h1>
+      <p>🚀 Welcome to my website!</p>
+    </header>
+
+    <!-- <button onclick="window.location.hash='skills'; ">Skill</button> -->
+
+    <blockquote>
+      <p>I'm a Web Developer</p>
+    </blockquote>
+
+    <section id="information" class="left">
+      <h2>📚 Information</h2>
+
+      <div class="row">
+        <div class="column">
+          <p>Full Name</p>
+        </div>
+        <div class="column">
+          <p>Trần Vũ Kiệt</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <p>Birthday</p>
+        </div>
+        <div class="column">
+          <p>12 Nov 1996</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <p>Email / Skype</p>
+        </div>
+        <div class="column">
+          <p><span><a href="mailto:tranvukietk15@gmail.com" title="send email to me">tranvukietk15@gmail.com</a></span></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <p>Phone</p>
+        </div>
+        <div class="column">
+          <p><span><a href="tel:0949845485">0949845485</a></span></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <p>Address</p>
+        </div>
+        <div class="column">
+          <p>Ho Chi Minh City</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <p>Linkedin</p>
+        </div>
+        <div class="column">
+          <p><a href="https://www.linkedin.com/in/kiet-tran-555845129/" target="_blank">Kiet Tran</a></p>
+        </div>
+      </div>
+
+    </section>
+
+    <section>
+      <h2 id="about">📜 ABOUT</h2>
+      <p>
+        About 3 years of experience in software development Strong knowledge with C#, .Net core, GraphQL and ReactJS.
+        Good knowledge of Databases, Object Oriented Programming, MVC, MVVM, design pattern, aws, docker.
+      </p>
+    </section>
+
+    <section id="skills" class="left">
+      <h2>🔥 Skills</h2>
+
+      <div class="row">
+        <div class="column">
+          <p>Programming languages</p>
+        </div>
+        <div class="column">
+          <p><span class="c-active">C#, Javascript, Python (self learning)</span></p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <p>Frameworks & Libraries</p>
+        </div>
+        <div class="column">
+          <p><span class="c-active">.NET CORE, ReactJS, Django (self learning), Vitejs (self learning), Threejs (self learning)</span></p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <p>Data Access</p>
+        </div>
+        <div class="column">
+          <p><span class="c-active">ENTITY FRAMEWORK</span></p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <p>Database</p>
+        </div>
+        <div class="column">
+          <span class="c-active">MySQL, MSSQL, DynamoDb, Postgres</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <p>Unit Testing</p>
+        </div>
+        <div class="column">
+          <span class="c-active">NUnit, XUnit, Moq</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <p>Design Pattern</p>
+        </div>
+        <div class="column">
+          <p><span class="c-active">Common design pattern</span></p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <p>Knowledge</p>
+        </div>
+        <div class="column">
+          <p><span class="c-active">AWS, Azure, Docker, Event (SNS, SQS, Azure Service Bus, RabbitMQ)</span></p>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="projects" class="light">
+      <h2>👩🏽‍🚀 Projects</h2>
+
+      <div class="row">
+        <div class="column">
+          <ul>
+            <li>
+              <p class="prj active" onclick="displayDetail('#ts')" id="ts">Transwap</p>
+            </li>
+            <li>
+              <p class="prj" onclick="displayDetail('#sp')" id="sp">Confidential Project</p>
+            </li>
+            <li>
+              <p class="prj" onclick="displayDetail('#bn')" id="bn">Beniplus</p>
+            </li>
+            <li>
+              <p class="prj" onclick="displayDetail('#mc')" id="mc">Milano Coffee</p>
+            </li>
+            <li>
+              <p class="prj" onclick="displayDetail('#vc')" id="vc">VietCredit</p>
+            </li>
+            <li>
+              <p class="prj" onclick="displayDetail('#rz')" id="rz">RVezy</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="column detail">
+          <ul>
+            <li>
+              <p><small>Date:</small> <span id="detail-0" class="c-active">Mar/2021 - Present</span></p>
+            </li>
+            <li>
+              <p><small>Project Technology:</small> <span id="detail-1" class="c-active">NET 5, Microservices, ReactJS, Azure, Onfindo</span></p>
+            </li>
+            <li>
+              <p><small>My Position:</small> <span id="detail-2" class="c-active">Analyst Developer</span></p>
+            </li>
+            <li>
+              <p><small>Team size:</small> <span id="detail-3" class="c-active">8</span></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      <h2>🏆 Detail</h2>
+
+      <div class="topToBottom" style="display: block;" id="Transwap">
+        <p>TranSwap is a cross-border payment platform for businesses and everyday people who seek to make payments
+          overseas while reducing FX costs and complexity. We offer the most competitive rates through our proprietary
+          online transaction portal and a wide network of FX Partners to enable our users to fulfil global payments at
+          the lowest cost efficiently.</p>
+        <p>In addition to TranSwap’s online transaction portal, cross-border payments provided by TranSwap are also
+          available on the Networked Trade Platform (“NTP”) Value Added Service (“VAS”) provider listing. As an NTP
+          VAS provider, TranSwap is part of the vibrant trade ecosystem that is the NTP – a Singapore Government
+          initiative. We offer a cost-effective and convenient solution to importers and exporters seeking to make or
+          collect payments internationally.</p>
+      </div>
+
+      <div class="topToBottom" style="display: none;" id="Secrect">
+        <p>
+          'Confidential Project' is highly regarded as a driving force in financial adviser professional development
+          with their market-leading 'Confidential' product. Annually, 'Confidential' provide Continuing Professional
+          Development (CPD) solutions to corporates and individuals, with over 35,000 users of CPD programs through its
+          online CPD platform, 'Confidential'. The 'Confidential' product has evolved over time and is currently in its
+          16th year of operation.
+        </p>
+      </div>
+
+      <div class="topToBottom" style="display: none;" id="Beniplus">
+        <p>
+          Manage Employer, employee and Benefit Health care of employee, check bill physical examination or
+          health-related issues then give money back for employee
+        </p>
+      </div>
+
+      <div class="topToBottom" style="display: none;" id="Milano">
+        <p>
+          Manage warehouse order, manage user and franchise agent, booking coffee and food.
+        </p>
+      </div>
+
+      <div class="topToBottom" style="display: none;" id="VietCredit">
+        <p>
+          Manage Loan Application, user request Loan profile, use SOAP put to VietCredit Server, run cronjob daily task
+          and get the result then update loan profile in database.
+        </p>
+      </div>
+
+      <div class="topToBottom" style="display: none;" id="RVezy">
+        <p>
+          Manage car rental in Canada.
+        </p>
+      </div>
+
+
+    </section>
+
+    <section class="left">
+      <h2>About this site</h2>
+
+      <p>Vitejs, Threejs, html & css</p>
+      <p>responsive coming soon!</p>
+
+    </section>
+
+    <blockquote>
+      <p>Thanks for watching!</p>
+    </blockquote>
+
+
+  </main>
+
+  <script type="module" src="/main.js"></script>
+  <script type="text/javascript" src="/prj.js"></script>
+</body>
+
+</html>
